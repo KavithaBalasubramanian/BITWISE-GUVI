@@ -1,0 +1,28 @@
+//Given a number N, print the Bitwise NOT of that number.
+
+
+
+const rl = require('readline');
+const ip = rl.createInterface({input:process.stdin, output:process.stdout});
+let a,b,c;
+let count = 0;
+ip.on('line', (data) => {
+  if (count === 0){
+    a = parseInt(data);
+    count++;
+  }
+  
+  else {
+    return
+  }
+});
+
+
+ip.on('close', () => {
+    function checkBitwise(a){
+  return (~a)
+
+}
+console.log(checkBitwise(a))
+    
+    })
