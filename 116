@@ -1,0 +1,18 @@
+//Given 2 numbers N,K print the number after performing bitwise left shift 'K' times.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+    var b =parseInt(inputData[1]);
+    var c = (a<<b);
+    console.log(c);
+});
