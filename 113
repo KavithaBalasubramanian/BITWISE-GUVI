@@ -1,0 +1,37 @@
+//Given a number N and an array of N integers, find the maximum of Bitwise OR of all segments.
+
+
+
+
+const rl = require('readline');
+const ip = rl.createInterface({input:process.stdin, output:process.stdout});
+let N,L,R;
+let count = 0;
+ip.on('line', (data) => {
+  if (count === 0){
+    n = parseInt(data);
+    count++;
+  }
+  else if(count == 1){
+    l = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    r = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else {
+    return
+  }
+});
+
+
+ip.on('close', () => {
+    
+    function check_btw(n,l,r){
+  return  l|r
+
+}
+console.log(check_btw(n,l[0],l[1]))
+    
+    })
