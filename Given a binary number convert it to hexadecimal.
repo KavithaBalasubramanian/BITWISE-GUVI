@@ -1,0 +1,19 @@
+//Given a binary number convert it to hexadecimal.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var a=parseInt(inputData);
+    var c= parseInt(a,2).toString(16);
+    console.log(c)
+
+});
+    
